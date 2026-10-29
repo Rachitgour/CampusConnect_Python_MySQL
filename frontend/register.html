@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4F46E5">
+  <meta name="description" content="CampusConnect helps students discover peers, share skills, and collaborate on learning and projects.">
+  <title>CampusConnect | Create account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body class="auth-page" data-page="register" >
+<main class="auth-layout auth-register-layout">
+  <section class="auth-brand-panel">
+    <a class="brand auth-brand" href="/">CampusConnect<span class="brand-dot">.</span></a>
+    <div class="auth-brand-copy"><span class="eyebrow eyebrow-light">MAKE YOUR NEXT CONNECTION</span><h1>Your skills.<br>Your people.<br>Your next idea.</h1><p>Create a student profile, show what you're learning, and find people who want to build alongside you.</p><div class="auth-trust-row"><span class="trust-icon">✓</span><span>A profile is the first step toward collaboration.</span></div></div>
+    <div class="auth-decoration auth-decoration-one"></div><div class="auth-decoration auth-decoration-two"></div>
+    <span class="auth-panel-bottom">Connect with curiosity.</span>
+  </section>
+  <section class="auth-form-panel"><div class="auth-form-wrap register-form-wrap">
+    <a class="mobile-auth-brand brand" href="/">CampusConnect<span class="brand-dot">.</span></a>
+    <div class="auth-heading"><span class="eyebrow">GET STARTED</span><h2>Create your account</h2><p>Tell the community a little about yourself.</p></div>
+    <div class="form-message" data-form-message hidden></div>
+    <form class="form-stack" data-form="register">
+      <div class="form-field"><label for="name">Full name <span class="required-star">*</span></label><input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" maxlength="80" required></div>
+      <div class="form-field"><label for="email">Email address <span class="required-star">*</span></label><input type="email" id="email" name="email" placeholder="you@college.edu" autocomplete="email" maxlength="160" required></div>
+      <div class="form-field"><label for="password">Password <span class="required-star">*</span></label><input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" required><small>Use at least 8 characters.</small></div>
+      <div class="form-two-columns"><div class="form-field"><label for="college">College</label><input type="text" id="college" name="college" placeholder="College name" maxlength="120"></div><div class="form-field"><label for="course">Course / branch</label><input type="text" id="course" name="course" placeholder="B.Tech CSE" maxlength="100"></div></div>
+      <div class="form-field"><label for="year">Study year</label><select id="year" name="year"><option value="">Choose year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option><option>Postgraduate</option><option>Other</option></select></div>
+      <div class="form-field"><label for="skills">Skills <span class="field-optional">(optional)</span></label><input type="text" id="skills" name="skills" placeholder="Java, HTML, CSS"><small>Separate each skill with a comma.</small></div>
+      <div class="form-field"><label for="interests">Interests <span class="field-optional">(optional)</span></label><input type="text" id="interests" name="interests" placeholder="Web development, DSA"></div>
+      <button type="submit" class="button button-primary button-full">Create account <span aria-hidden="true">→</span></button>
+    </form>
+    <p class="auth-switch">Already have an account? <a href="/login.html">Log in</a></p>
+    <a class="back-home-link" href="/">← Back to home</a>
+  </div></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4F46E5">
+  <meta name="description" content="CampusConnect helps students discover peers, share skills, and collaborate on learning and projects.">
+  <title>CampusConnect | Log in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body class="auth-page" data-page="login" >
+<main class="auth-layout">
+  <section class="auth-brand-panel">
+    <a class="brand auth-brand" href="/">CampusConnect<span class="brand-dot">.</span></a>
+    <div class="auth-brand-copy"><span class="eyebrow eyebrow-light">WELCOME BACK TO YOUR COMMUNITY</span><h1>Connect. Learn.<br>Build Together.</h1><p>Pick up where you left off. Your next teammate, study partner, or new idea could be one connection away.</p><div class="auth-trust-row"><span class="trust-icon">✦</span><span>Skills shared. Ideas unlocked. Projects built.</span></div></div>
+    <div class="auth-decoration auth-decoration-one"></div><div class="auth-decoration auth-decoration-two"></div>
+    <span class="auth-panel-bottom">A better way to find your people.</span>
+  </section>
+  <section class="auth-form-panel"><div class="auth-form-wrap">
+    <a class="mobile-auth-brand brand" href="/">CampusConnect<span class="brand-dot">.</span></a>
+    <div class="auth-heading"><span class="eyebrow">YOUR CAMPUS COMMUNITY</span><h2>Welcome back!</h2><p>Log in to continue discovering and collaborating.</p></div>
+    <div class="form-message" data-form-message hidden></div>
+    <form class="form-stack" data-form="login">
+      <div class="form-field"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@college.edu" autocomplete="email" required></div>
+      <div class="form-field"><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required></div>
+      <button type="submit" class="button button-primary button-full">Log in <span aria-hidden="true">→</span></button>
+    </form>
+    <p class="auth-switch">Don't have an account? <a href="/register.html">Create one</a></p>
+    <a class="back-home-link" href="/">← Back to home</a>
+  </div></section>
+</main>
+</body>
+</html>

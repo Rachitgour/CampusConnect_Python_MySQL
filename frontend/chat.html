@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4F46E5">
+  <meta name="description" content="Chat with students you've connected with on CampusConnect.">
+  <title>CampusConnect | Chats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body class="app-page" data-page="chat" data-protected="true">
+<header class="site-header">
+  <nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="/" aria-label="CampusConnect home">CampusConnect<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="primary-navigation">
+      <a href="/" data-nav="home">Home</a>
+      <a href="/#features">About</a>
+      <a href="/login.html" data-guest-only>Login</a>
+      <a href="/register.html" class="nav-register" data-guest-only>Register</a>
+    </div>
+  </nav>
+</header>
+<div class="container flash-region" aria-live="polite"></div>
+<main class="page-shell container chat-page-shell">
+  <section class="page-intro chat-page-intro">
+    <div><span class="eyebrow">YOUR COLLABORATIONS</span><h1>Chats</h1><p>Talk with students after they accept your collaboration request.</p></div>
+    <a class="button button-secondary" href="/requests.html">View requests</a>
+  </section>
+  <section class="chat-layout" aria-label="Chats">
+    <aside class="chat-sidebar" aria-label="Your conversations">
+      <div class="chat-sidebar-heading"><h2>Connections</h2><span class="count-pill" id="chat-conversation-count">Loading</span></div>
+      <div class="chat-conversation-list" id="chat-conversations">
+        <div class="empty-state empty-state-compact"><p>Loading your connections…</p></div>
+      </div>
+    </aside>
+    <section class="chat-panel" id="chat-panel" aria-label="Conversation">
+      <div class="chat-panel-placeholder" id="chat-empty-state">
+        <div class="chat-placeholder-icon" aria-hidden="true">✉</div>
+        <h2>Your conversation starts here</h2>
+        <p>Choose an accepted connection to read messages and send a reply.</p>
+      </div>
+    </section>
+  </section>
+  <p class="chat-footnote">Messages refresh automatically while this page is open. Chat is available only for accepted collaboration requests.</p>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <a class="brand footer-logo" href="/">CampusConnect<span class="brand-dot">.</span></a>
+      <p>Connect. Learn. Build Together.</p>
+      <span class="footer-made">Made with <span aria-hidden="true">♥</span></span>
+    </div>
+    <div class="footer-right">
+      <nav class="footer-links" aria-label="Footer navigation"><a href="/">Home</a><a href="/discover.html">Discover students</a><a href="/requests.html">Requests</a></nav>
+      <p class="copyright">© 2026 CampusConnect</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
